@@ -317,15 +317,15 @@ export default class Trangchu extends Component {
         </ScrollView>
         </View>
 
-<Text style={{fontSize:24,padding:10,paddingTop:15,paddingBottom:15,width:'80%',color:'red'}}>Giá xe Ford</Text>
+<Text style={{fontSize:24,padding:10,paddingTop:15,paddingBottom:15,width:'80%',color:'red'}}>Giá xe MAZDA</Text>
         <View style={{padding:10,flexDirection:'row'}}>
         <ScrollView horizontal={true}>
         <View style={{marginRight:40}}>
             <Image
               style={{width: 200, height: 150}}
-              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-Ford-escape-mau-xanh.jpg'}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-mazda-cx9.png'}}
             />
-            <Text>FORD ESCAPE 2018</Text>
+            <Text>MAZDA CX9</Text>
             <View style={{flexDirection:'row'}}>
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star" color='#ffff00'/>
@@ -333,14 +333,14 @@ export default class Trangchu extends Component {
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star-outline" color='#ffff00'/>
             </View>
-            <Text style={{color:'red'}}>700.000.000 đ</Text>
+            <Text style={{color:'red'}}>1.855.000.000 đ</Text>
             </View>
             <View style={{marginRight:40}}>
             <Image
               style={{width: 200, height: 150}}
-              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-Mazda-CX-3.jpg'}}
             />
-            <Text>FORD RANGER</Text>
+            <Text>MAZDA CX3 2018</Text>
             <View style={{flexDirection:'row'}}>
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star" color='#ffff00'/>
@@ -348,14 +348,14 @@ export default class Trangchu extends Component {
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star-half" color='#ffff00'/>
             </View>
-            <Text style={{color:'red'}}>634.000.0000 đ</Text>
+            <Text style={{color:'red'}}>800.000.000 đ</Text>
             </View>
             <View style={{marginRight:40}}>
             <Image
               style={{width: 200, height: 150}}
-              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-mazda6-mau-do.jpg'}}
             />
-            <Text>FORD ECOSPORT 2018</Text>
+            <Text>MAZDA 6</Text>
             <View style={{flexDirection:'row'}}>
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star" color='#ffff00'/>
@@ -363,14 +363,14 @@ export default class Trangchu extends Component {
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star" color='#ffff00'/>
             </View>
-            <Text style={{color:'red'}}>545.000.000 đ</Text>
+            <Text style={{color:'red'}}>899.000.000 đ</Text>
             </View>
             <View style={{marginRight:40}}>
             <Image
               style={{width: 200, height: 150}}
-              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-mazda-3-mau-trang-2017-2018.jpg'}}
             />
-            <Text>FORD EVEREST 2018</Text>
+            <Text>MAZDA 3 2018</Text>
             <View style={{flexDirection:'row'}}>
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star" color='#ffff00'/>
@@ -378,14 +378,14 @@ export default class Trangchu extends Component {
             <Icon android="md-star-outline" color='#ffff00'/>
             <Icon android="md-star-outline" color='#ffff00'/>
             </View>
-            <Text style={{color:'red'}}>1.185.000.000 đ</Text>
+            <Text style={{color:'red'}}>750.000.000 đ</Text>
             </View>
             <View style={{marginRight:40}}>
             <Image
               style={{width: 200, height: 150}}
-              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia_xe_fiesta.jpg'}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-mazda-2.jpg'}}
             />
-            <Text>FORD FIESTA</Text>
+            <Text>MAZDA 2</Text>
             <View style={{flexDirection:'row'}}>
             <Icon android="md-star" color='#ffff00'/>
             <Icon android="md-star" color='#ffff00'/>
@@ -393,7 +393,37 @@ export default class Trangchu extends Component {
             <Icon android="md-star-outline" color='#ffff00'/>
             <Icon android="md-star-outline" color='#ffff00'/>
             </View>
-            <Text style={{color:'red'}}>564.000.000 đ</Text>
+            <Text style={{color:'red'}}>569.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia_xe_mazda_mx5.jpg'}}
+            />
+            <Text>MAZDA MX5</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>789.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-mazda-cx5-2018-2019.jpg'}}
+            />
+            <Text>MAZDA CX5 2017-2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>999.000.000 đ</Text>
             </View>
         </ScrollView>
         </View>
