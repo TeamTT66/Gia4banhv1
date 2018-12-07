@@ -15,9 +15,6 @@ import RegisterScreen from './Components/RegisterScreen';
 import SpashScreen from './Components/SpashScreen';
 import Item from './Components/Item';
 import HelpScreen from './Components/HelpScreen';
-import HomepageScreen from './Components/HomepageScreen';
-import HomepageScreen from './Components/HomepageScreen';
-import ListProductScreen from './Components/ListProductScreen';
 
 export default class App extends React.Component{
   static navigationOptions = { header: null }
@@ -34,8 +31,6 @@ const AppStackNavigator = createStackNavigator({
   Register: RegisterScreen,
   Help: HelpScreen,
   Item: Item,
-  Homepage: HomepageScreen,
-  ListProductScreen: ListProductScreen,
 })
 
 const styles = StyleSheet.create({
