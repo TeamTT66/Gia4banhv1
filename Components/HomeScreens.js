@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View,TouchableOpacity,Image,TextInput,ScrollView} from 'react-native';
+import {Platform, StyleSheet, Text, View,TouchableOpacity,Image,TextInput,ImageBackground,ScrollView} from 'react-native';
 import Icon from 'react-native-ionicons';
 import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu';
 import Slideshow from 'react-native-image-slider-show';
@@ -427,7 +427,57 @@ export default class Trangchu extends Component {
             </View>
         </ScrollView>
         </View>
+        <View style={{color:'#ffffff',flexDirection:"row"}}>
+          <ImageBackground style={{width:'100%',height:150,flexDirection:'row'}} source={require('../Image/nen.png')}>
 
+          <View style={{width:'30%',height:150}}>
+          <View style={{width:50,height:50, marginTop:10, marginLeft:20}}>           
+            <Image source={require('../Image/logo.png') }></Image>
+          </View>
+          <View style={{marginTop:5, marginLeft:20}}>
+            <Text style={{color:'#ffffff'}} >Địa chỉ: Hà Nội</Text>
+          </View>
+          <View style={{marginTop:5, marginLeft:20}}>
+            <Text style={{color:'#ffffff'}}>Email:</Text>
+          </View>
+          <View style={{marginTop:5, marginLeft:20}}>
+            <Text style={{color:'#ffffff'}}>Hotline:</Text>
+          </View>
+          </View>
+          <View style={{height:150}}>
+            <Text style={{color:'#ffffff', marginLeft:20,marginTop:15}}>Thông tin</Text>
+              <View style={{marginTop:10, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Tư vấn</Text>
+              </View>
+              <View style={{marginTop:5, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Khuyến mãi</Text>
+              </View>
+              <View style={{marginTop:5, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Privacy Policy</Text>
+              </View>
+              <View style={{marginTop:5, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>FAQs</Text>
+              </View>
+          
+          </View>
+          <View style={{height:150}}>
+            <Text style={{color:'#ffffff', marginLeft:20,marginTop:15}}>Thời gian làm việc</Text>
+              <View style={{marginTop:10, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Lịch</Text>
+              </View>
+              <View style={{marginTop:5, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Thứ 2-6: 8h30-18h00</Text>
+              </View>
+              <View style={{marginTop:5, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Thứ 7: 9h am-2h pm</Text>
+              </View>
+              <View style={{marginTop:5, marginLeft:20}}>
+                <Text style={{color:'#ffffff'}}>Chủ nhật: Đóng cửa</Text>
+              </View>
+          
+          </View>
+          </ImageBackground>
+        </View>
         </ScrollView>
       </View>
     );
