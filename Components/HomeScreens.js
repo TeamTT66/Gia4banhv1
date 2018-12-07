@@ -13,6 +13,8 @@ import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu';
 import Slideshow from 'react-native-image-slider-show';
 
 export default class Trangchu extends Component {
+  static navigationOptions = {header:null};
+
   constructor(props) {
     super(props);
     logo= require('../Image/logo.png');
