@@ -14,14 +14,14 @@ import Slideshow from 'react-native-image-slider-show';
 
 export default class Trangchu extends Component {
   static navigationOptions = {header:null};
-
   constructor(props) {
     super(props);
     logo= require('../Image/logo.png');
-
     this.state = {
       position: 1,
       interval: null,
+      dataSource1:[],
+      isLoading: true,
       dataSource: [
         {
           title: '',
@@ -166,8 +166,238 @@ export default class Trangchu extends Component {
               </View>
             </View>
           </ScrollView>
+
         </View>
-        <Text style={{fontSize:24,padding:10,paddingBottom:15}}>Bán xe hơi</Text>
+        <Text style={{fontSize:24,padding:10,paddingBottom:15,width:'80%'}}>Bán xe hơi</Text>
+
+        <Text style={{fontSize:24,padding:10,paddingTop:15,paddingBottom:15,width:'80%',color:'red'}}>Giá xe BMW</Text>
+        <View style={{padding:10,flexDirection:'row'}}>
+        <ScrollView horizontal={true}>
+        <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAj8U79.img?h=373&w=624&m=6&q=60&o=f&l=f&x=857&y=882'}}
+            />
+            <Text>BMW SERIES 3</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>1.059.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-BMW-420i-gran-coupe.jpg'}}
+            />
+            <Text>BMW SERIES 4</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-half" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>2.649.000.0000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-bmw-series-5.jpg'}}
+            />
+            <Text>BMW SERIES 5</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>2.699.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-bmw-series-6.jpg'}}
+            />
+            <Text>BMW SERIES 5</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>3.499.000.000 đ</Text>
+            </View>
+        </ScrollView>
+        </View>
+        
+        <Text style={{fontSize:24,padding:10,paddingTop:15,paddingBottom:15,width:'80%',color:'red'}}>Giá xe Ford</Text>
+        <View style={{padding:10,flexDirection:'row'}}>
+        <ScrollView horizontal={true}>
+        <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-Ford-escape-mau-xanh.jpg'}}
+            />
+            <Text>FORD ESCAPE 2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>700.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+            />
+            <Text>FORD RANGER</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-half" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>634.000.0000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+            />
+            <Text>FORD ECOSPORT 2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>545.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+            />
+            <Text>FORD EVEREST 2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>1.185.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia_xe_fiesta.jpg'}}
+            />
+            <Text>FORD FIESTA</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>564.000.000 đ</Text>
+            </View>
+        </ScrollView>
+        </View>
+
+<Text style={{fontSize:24,padding:10,paddingTop:15,paddingBottom:15,width:'80%',color:'red'}}>Giá xe Ford</Text>
+        <View style={{padding:10,flexDirection:'row'}}>
+        <ScrollView horizontal={true}>
+        <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia-xe-Ford-escape-mau-xanh.jpg'}}
+            />
+            <Text>FORD ESCAPE 2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>700.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+            />
+            <Text>FORD RANGER</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-half" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>634.000.0000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+            />
+            <Text>FORD ECOSPORT 2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>545.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180820/cq5dam.web.ford.1280.1280.jpeg'}}
+            />
+            <Text>FORD EVEREST 2018</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>1.185.000.000 đ</Text>
+            </View>
+            <View style={{marginRight:40}}>
+            <Image
+              style={{width: 200, height: 150}}
+              source={{uri: 'https://gia4banh.com/uploaded/images/20180822/gia_xe_fiesta.jpg'}}
+            />
+            <Text>FORD FIESTA</Text>
+            <View style={{flexDirection:'row'}}>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            <Icon android="md-star-outline" color='#ffff00'/>
+            </View>
+            <Text style={{color:'red'}}>564.000.000 đ</Text>
+            </View>
+        </ScrollView>
+        </View>
+
         </ScrollView>
       </View>
     );
